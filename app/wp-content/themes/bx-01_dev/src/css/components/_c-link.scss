@@ -44,4 +44,26 @@
     font-size: 1.5rem;
     color: inherit;
   }
+  &\:bottomSns {
+    line-height: 1;
+    font-size: setting.fontsize(m);
+    color: inherit;
+  }
+}
+.c-bottom-logo {
+  margin-left: auto;
+  margin-right: auto;
+  line-height: setting.lineheight(heading);
+  font-size: 40px;
+  font-family: setting.$font-family-oswald;
+  font-weight: setting.fontweight(b);
+  color: inherit;
+  letter-spacing: 1.5px;
+  &::first-letter {
+    color: setting.brandcolor(base);
+  }
+}
+.c-bottom-address {
+  color: var(--c-dimmed);
+  text-align: center;
 }

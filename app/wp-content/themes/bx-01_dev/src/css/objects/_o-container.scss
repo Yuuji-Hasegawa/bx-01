@@ -6,11 +6,11 @@
   margin-left: auto;
   margin-right: auto;
   &\:header {
-    position: relative;
     padding: 3px clamp(setting.spaces(2xs), calc(3.5vw - setting.spaces(base)), setting.spaces(base));
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: setting.itemsize(wrapper);
   }
   &\:innerWrap,
   .c-inner-wrap {
@@ -32,6 +32,13 @@
   margin-right: auto;
 }
 .c-copyright {
-  font-family: setting.$font-family-roboto;
-  padding-bottom: setting.spaces(base);
+  font-family: setting.$font-family-oswald;
+  padding: setting.spaces(base) 0;
+  margin-right: calc(setting.spaces(base) * -1);
+  margin-left: calc(setting.spaces(base) * -1);
+  background: setting.brandcolor(base);
+  color: #fff;
+}
+.o-paste {
+  position: relative;
 }

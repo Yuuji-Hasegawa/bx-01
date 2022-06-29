@@ -8,6 +8,16 @@
     & + * {
       margin-top: setting.spaces(l);
     }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      width: 60px;
+      height: 3px;
+      transform: translateX(-50%);
+      background: setting.brandcolor(base);
+    }
   }
   h3 {
     font-weight: setting.fontweight(b);
@@ -69,4 +79,12 @@
   background: var(--c-overlay);
   margin-bottom: setting.spaces(l);
   color: var(--c-dimmed);
+}
+.c-map-embed {
+  line-height: 1;
+  position: relative;
+  margin-bottom: setting.spaces(l);
+  & > iframe {
+    filter: grayscale(100%);
+  }
 }

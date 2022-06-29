@@ -15,7 +15,8 @@
       margin-top: setting.spaces(xs);
     }
   }
-  &\:s {
+  &\:s,
+  &\:bottomLogo {
     & > * + * {
       margin-top: setting.spaces(s);
     }
@@ -55,5 +56,16 @@
     text-align: left;
     flex-shrink: 0;
     max-width: calc(100% - 107px - setting.spaces(xs));
+  }
+  &\:bottomLogo {
+    max-width: setting.itemsize(content);
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: setting.spaces(l);
+    box-sizing: content-box;
+    padding-left: setting.spaces(base);
+    padding-right: setting.spaces(base);
   }
 }

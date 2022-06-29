@@ -4,9 +4,23 @@
   line-height: setting.lineheight(heading);
   font-size: clamp(setting.fontsize(l), calc((100vw - 650px) * 999), setting.fontsize(xl));
   text-align: center;
-  font-family: setting.$font-family-roboto;
+  font-family: setting.$font-family-oswald;
+  position: relative;
   & + * {
     margin-top: setting.spaces(l);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 60px;
+    height: 3px;
+    transform: translateX(-50%);
+    background: setting.brandcolor(base);
+  }
+  &::first-letter {
+    color: setting.brandcolor(base);
   }
 }
 .c-trim-title {
@@ -23,9 +37,12 @@
   }
 }
 .c-min-heading {
-  font-weight: setting.fontweight(m);
+  font-weight: setting.fontweight(b);
   line-height: setting.lineheight(heading);
-  font-size: setting.fontsize(l);
+  color: #fff;
+  background: setting.brandcolor(base);
+  padding: setting.spaces(xs);
+  font-size: clamp(setting.fontsize(m), calc((100vw - 650px) * 999), setting.fontsize(l));
   & + * {
     margin-top: setting.spaces(m);
   }

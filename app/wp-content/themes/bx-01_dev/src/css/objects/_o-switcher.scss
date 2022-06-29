@@ -6,7 +6,7 @@
     gap: setting.spaces(xs);
     align-items: flex-start;
     > * {
-      font-family: setting.$font-family-roboto;
+      font-family: setting.$font-family-oswald;
       font-weight: setting.fontweight(b);
     }
     > * + * {
@@ -45,5 +45,5 @@
   font-weight: setting.fontweight(m);
 }
 .c-topic-date {
-  font-family: setting.$font-family-roboto;
+  font-family: setting.$font-family-oswald;
 }

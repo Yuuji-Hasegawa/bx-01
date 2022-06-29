@@ -6,7 +6,8 @@
   flex-wrap: wrap;
   gap: setting.spaces(base);
   &\:center,
-  &\:ftNav {
+  &\:ftNav,
+  &\:bottomSns {
     justify-content: center;
   }
   &\:s,
@@ -21,24 +22,28 @@
     gap: setting.spaces(2xs);
   }
   &\:ftNav {
-    margin-bottom: setting.spaces(base);
     @include tool.max-screen(767px) {
       justify-content: flex-start;
     }
   }
   &\:headLogo {
-    line-height: 1;
-    font-size: 32px;
+    line-height: setting.lineheight(heading);
     align-items: center;
-    color: var(--c-txt);
     gap: setting.spaces(xs);
     padding: 10px 0;
   }
   &__headLogo {
-    line-height: setting.lineheight(heading);
-    font-family: setting.$font-family-roboto;
+    font-family: setting.$font-family-oswald;
     font-size: setting.fontsize(l);
     font-weight: setting.fontweight(b);
+    color: inherit;
+    &::first-letter {
+      color: setting.brandcolor(base);
+    }
+  }
+  &__headLead {
+    font-size: setting.fontsize(m);
+    font-weight: setting.fontweight(m);
   }
   &__ftItem {
     flex-shrink: 0;

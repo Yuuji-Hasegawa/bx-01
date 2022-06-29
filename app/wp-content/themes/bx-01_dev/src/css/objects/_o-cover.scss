@@ -18,15 +18,14 @@
     font-weight: setting.fontweight(b);
     font-size: clamp(setting.fontsize(l), calc((100vw - 360px) * 999), setting.fontsize(xl));
     gap: setting.spaces(s);
-    font-family: setting.$font-family-roboto;
+    font-family: setting.$font-family-oswald;
     z-index: 2;
-    background: var(--c-overlay);
-    color: var(--c-bg);
-    text-shadow: 0 0 6px var(--c-dimmed);
+    background: rgba(setting.brandcolor(base), .4);
+    color: #fff;
   }
   &__lead-copy {
     font-size: clamp(setting.fontsize(m), calc((100vw - 360px) * 999), setting.fontsize(l));
-    font-family: setting.$font-family-roboto;
+    font-family: setting.$font-family-oswald;
   }
 }
 .c-hero {
