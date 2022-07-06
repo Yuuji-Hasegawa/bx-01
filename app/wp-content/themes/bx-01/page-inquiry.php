@@ -4,7 +4,7 @@
         <p class="u-mb-m">
             サービスに関するご質問、ご要望などございましたら、下記のお問い合わせフォームから、お気軽にお寄せください。
         </p>
-		<?php echo do_shortcode('[contact-form-7 id="28" title="お問い合わせ"]');?>
+        <?php echo do_shortcode('[contact-form-7 id="xx" title="xx"]');?>
         <ul class="o-stack o-stack:announce">
             <li>調査等のため、返信にお時間を頂くことがございます。予めご了承ください。</li>
             <li>
